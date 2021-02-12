@@ -1,3 +1,4 @@
 # Simple authorization form
 
-![screenshot](/images/screenshot.png)
+![screenshot sign up page](/images/screenshot.png)
+![screenshot sign in page](/images/screenshot2.png)
