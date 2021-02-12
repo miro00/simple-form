@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+  height: $header-height;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid grey;
+
+  &__wrap {
+    width: 1400px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    text-decoration: none;
+    font-size: 2em;
+    color: $main-color;
+    font-weight: bold;
+  }
+
+  &__profile {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      padding: 4px 10px;
+      cursor: pointer;
+    }
+    &-login {
+      border: 2px solid $main-color;
+    }
+    &-registration {
+      background-color: $main-color !important;
+      border-radius: 4px;
+      color: #fff;
+    }
+  }
+}

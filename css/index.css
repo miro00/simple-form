@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@import url(d:\Projects\simple-form\css\normalize.css);
+.header {
+  width: 100%;
+  height: 80px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid grey;
+}
+
+.header__wrap {
+  width: 1400px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  text-decoration: none;
+  font-size: 2em;
+  color: #5505FF;
+  font-weight: bold;
+}
+
+.header__profile {
+  width: 15%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__profile button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.header__profile-login {
+  border: 2px solid #5505FF;
+}
+
+.header__profile-registration {
+  background-color: #5505FF !important;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.main {
+  width: 100%;
+}
+
+.main__wrap {
+  width: 1400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: calc(100vh - 80px);
+}
+
+.main__signup, .main__signin {
+  margin-top: 60px;
+  width: 400px;
+  border: 1px solid #5505FF;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.main__form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 24px 32px;
+}
+
+.main__form-title {
+  width: 100%;
+  height: 60px;
+  font-size: 2em;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.main__form-title::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #5505FF;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.main__form-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__form-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.main__form-item label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.main__form-item input {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #c4c4c4;
+  outline: none;
+  padding: 0 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main__form-item input:focus {
+  border: 2px solid #5505FF;
+}
+
+.main__form-item input[type="submit"] {
+  cursor: pointer;
+  font-weight: 500;
+  color: #fff;
+  background-color: #5505FF;
+}
+
+.main__form-question {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 1920px) {
+  .main__wrap,
+  .header__wrap {
+    width: 1400px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .main__wrap,
+  .header__wrap {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main__wrap,
+  .header__wrap {
+    width: 500px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1920px;
+  height: 400px;
+  background: url("../images/bg.svg");
+  z-index: -1;
+}
+
+a {
+  color: #5505FF;
+}
+/*# sourceMappingURL=index.css.map */
